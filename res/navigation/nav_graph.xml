@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/welcome">
+
+    <fragment
+        android:id="@+id/home2"
+        android:name="com.example.studentes.home"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/profil"
+        android:name="com.example.studentes.profil"
+        android:label="fragment_profil"
+        tools:layout="@layout/fragment_profil" />
+    <fragment
+        android:id="@+id/welcome"
+        android:name="com.example.studentes.welcome"
+        android:label="fragment_welcome"
+        tools:layout="@layout/fragment_welcome" >
+        <action
+            android:id="@+id/action_welcome_to_profil"
+            app:destination="@id/profil" />
+        <action
+            android:id="@+id/action_welcome_to_face2"
+            app:destination="@id/face2" />
+        <action
+            android:id="@+id/action_welcome_to_attendance2"
+            app:destination="@id/attendance2" />
+        <action
+            android:id="@+id/action_welcome_to_wepsit2"
+            app:destination="@id/wepsit2" />
+        <action
+            android:id="@+id/action_welcome_to_profildiploma"
+            app:destination="@id/profildiploma" />
+        <action
+            android:id="@+id/action_welcome_to_notification"
+            app:destination="@id/notification" />
+    </fragment>
+    <fragment
+        android:id="@+id/face2"
+        android:name="com.example.studentes.face"
+        android:label="fragment_face"
+        tools:layout="@layout/fragment_face" />
+    <fragment
+        android:id="@+id/attendance2"
+        android:name="com.example.studentes.attendance"
+        android:label="fragment_attendance"
+        tools:layout="@layout/fragment_attendance" >
+        <action
+            android:id="@+id/action_attendance2_to_place"
+            app:destination="@id/place" />
+    </fragment>
+    <fragment
+        android:id="@+id/wepsit2"
+        android:name="com.example.studentes.wepsit"
+        android:label="fragment_wepsit"
+        tools:layout="@layout/fragment_wepsit" />
+    <fragment
+        android:id="@+id/location"
+        android:name="com.example.studentes.location"
+        android:label="fragment_location"
+        tools:layout="@layout/fragment_location" />
+    <fragment
+        android:id="@+id/place"
+        android:name="com.example.studentes.place"
+        android:label="fragment_place"
+        tools:layout="@layout/fragment_place" />
+    <fragment
+        android:id="@+id/profildiploma"
+        android:name="com.example.studentes.profildiploma"
+        android:label="fragment_profildiploma"
+        tools:layout="@layout/fragment_profildiploma" />
+    <fragment
+        android:id="@+id/notification"
+        android:name="com.example.studentes.Notification"
+        android:label="fragment_notification"
+        tools:layout="@layout/fragment_notification" />
+</navigation>
